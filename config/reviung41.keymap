@@ -11,12 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
-&encoder_1 {
+&left_encoder {
     status = "okay";
 };
 
-&encoder_2 {
-    status = "okay";
 };
 
 / {
