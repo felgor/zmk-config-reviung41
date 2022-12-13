@@ -5,8 +5,6 @@
  */
 
 #include "reviung41.dtsi"
-
-};
 	
 &left_encoder {
     	status = "okay";
