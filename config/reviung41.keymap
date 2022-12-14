@@ -29,7 +29,7 @@
 // |  ESC         |  Q  |  W  |  E  |  R  |
 
                         bindings = <
-   &kp C_PP         &td0   &kp RGB_EFF &kp C_PREV &kp C_NEXT 
+   &kp C_PP         &kp &td0 &kp RGB_EFF &kp C_PREV &kp C_NEXT 
                         >;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
