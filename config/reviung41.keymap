@@ -11,6 +11,13 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
 
         keymap {
                 compatible = "zmk,keymap";
@@ -20,7 +27,7 @@
 // |  ESC         |  Q  |  W  |  E  |  R  |
 
                         bindings = <
-   &kp A         &kp B &kp C &kp D &kp E 
+   &kp C_PP         &kp &td0 &kp RGB_EFF &kp C_PREV &kp C_NEXT 
                         >;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
